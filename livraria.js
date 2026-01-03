@@ -16,7 +16,7 @@ export function pegaLivros() {
 
 export function listarLivrosAposAno(ano) {
     if (ano) {
-        const livrosImprimiveis = livros.filter(livro => +livro.ano > +ano).map(livro => `\nId: ${livro.id}, Título: ${livro.titulo}, Autor: ${livro.autor}, Publicado em: ${livro.ano}`)
+        const livrosImprimiveis = livros.filter(livro => +livro.ano >= +ano).map(livro => `\nId: ${livro.id}, Título: ${livro.titulo}, Autor: ${livro.autor}, Publicado em: ${livro.ano}`)
         if (livrosImprimiveis.length > 0) {
             return livrosImprimiveis
         }
@@ -51,9 +51,10 @@ export function adicionaLivro(titulo, autor, ano, id) {
     if (indice >= 0) {
         livros[indice].titulo = titulo
         livros[indice].autor = autor
-        livros[indice].ano = ano
+        livros[indice].ano = +ano
     } else {
         const idUnico = uuidv4()
+        ano = +ano
         livros.push({ id: idUnico, titulo, autor, ano })
     }
 }

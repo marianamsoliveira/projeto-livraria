@@ -31,17 +31,17 @@ while (1) {
             break
         case "ver todos":
             busca = pegaLivros()
-            textoAzul(busca+"\n")
+            textoAzul(busca + "\n")
             break
         case "busca por autor":
             autor = await le("\nInforme o autor do livro: ")
             busca = buscaLivrosPorAutor(autor)
-            textoAzul(busca+"\n")
+            textoAzul(busca + "\n")
             break
         case "listar por ano":
-            ano = await le("\nInforme o ano de publicação: ")
+            ano = await le("\nA partir de qual ano de publicação? ")
             lista = listarLivrosAposAno(ano)
-            textoAzul(lista+"\n")
+            textoAzul(lista + "\n")
             break
         case "salvar no arquivo":
             salvaLivrosArquivo()
