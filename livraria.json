@@ -1,0 +1,38 @@
+[
+    {
+        "id": "277cb2f0-1765-44af-bdbd-6fdaa97b9677",
+        "titulo": "A Branca de Neve",
+        "autor": "Machado Oliveira",
+        "ano": "1925"
+    },
+    {
+        "id": "caad7a35-fc5a-46fe-a8d5-456465e98c9e",
+        "titulo": "A Branca de Neve e os sete anões",
+        "autor": "Machado de Assis",
+        "ano": "1900"
+    },
+    {
+        "id": "68cf813e-c69d-4bce-9787-4424acd17e88",
+        "titulo": "A cruz e a Espada",
+        "autor": "Oliveira Alves",
+        "ano": 2014
+    },
+    {
+        "id": "9a8c7d28-7908-4f4d-9a9b-4bdcbcd31832",
+        "titulo": "História da Arte",
+        "autor": "Leonardo da Vince",
+        "ano": "1902"
+    },
+    {
+        "id": "d20cc035-b982-4644-94fe-f87b62907e9e",
+        "titulo": "PHP - Passado e Futuro",
+        "autor": "Mariana Oliveira",
+        "ano": "1952"
+    },
+    {
+        "id": "8f88de03-281d-4a58-8316-c687b958954c",
+        "titulo": "Teste 2",
+        "autor": "Mariana Oliveira",
+        "ano": "2025"
+    }
+]
