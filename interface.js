@@ -11,9 +11,21 @@ export async function menu(itens) {
     return opcaoSelecionada.selectedText
 }
 
+export async function subMenu(itens) {
+    let options = {
+        style: term.bgCyan.white,
+        selectedStyle: term.white.bgGray
+    }
+    const opcaoSelecionada = await term.singleLineMenu(itens, options).promise
+    return opcaoSelecionada.selectedText
+}
+
+
+
+
 export async function menuSelecaoUsuario(itens) {
     let options = {
-        style: term.inverse,
+        // style: term.inverse,
         selectedStyle: term.white.bgGray
     }
 
@@ -23,18 +35,25 @@ export async function menuSelecaoUsuario(itens) {
 }
 
 export async function le(enunciado) {
-    term(`${enunciado}`)
+    term(`\n${enunciado}`)
     const foiLido = await term.inputField().promise
     return foiLido
 }
 
+export function textoPadrao(texto){
+    term(`${texto}`)
+}
 export function textoVerde(texto){
-    term.green(`\n\n${texto}`)
+    term.green(`\n\n${texto}\n\n`)
 }
 export function textoAzul(texto){
-    term.blue(`\n\n${texto}`)
+    term.blue(`\n\n${texto}\n\n`)
 }
 
 export function finaliza(){
     process.exit()
+}
+
+export function voltar(){
+    term.clear()
 }

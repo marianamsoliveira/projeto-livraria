@@ -1,6 +1,7 @@
 import fs from "fs"
 import { v4 as uuidv4 } from "uuid"
 
+// Livros
 let livros = _carregaLivros()
 
 function _carregaLivros() {
@@ -9,36 +10,36 @@ function _carregaLivros() {
     return dados
 }
 
-export function pegaLivros() {
+export function listaLivros() {
     const livrosImprimiveis = livros.map(livro => `\nId: ${livro.id}, Título: ${livro.titulo}, Autor: ${livro.autor}, Publicado em: ${livro.ano}`)
     return livrosImprimiveis
 }
 
-export function listarLivrosAposAno(ano) {
+export function buscaLivrosAposAno(ano) {
     if (ano) {
         const livrosImprimiveis = livros.filter(livro => +livro.ano >= +ano).map(livro => `\nId: ${livro.id}, Título: ${livro.titulo}, Autor: ${livro.autor}, Publicado em: ${livro.ano}`)
         if (livrosImprimiveis.length > 0) {
             return livrosImprimiveis
         }
         else {
-            return `Ano: ${ano}\nNenhum livro encontrado`
+            return `Ano: ${ano}\nNenhum livro encontrado.`
         }
     }
     else {
-        return 'Ano não informado'
+        return 'Ano não informado.'
     }
 }
-export function buscaLivrosPorAutor(autor) {
+export function buscaLivrosPorAutor(idAutor, autor) {
     if (autor) {
         let livrosEncontrados
-        livrosEncontrados = livros.filter(livro => livro.autor === autor).map(livro => `\nId: ${livro.id}, Título: ${livro.titulo}, Autor: ${livro.autor}, Publicado em: ${livro.ano}`)
+        livrosEncontrados = livros.filter(livro => livro.autor === idAutor).map(livro => `\nId: ${livro.id}, Título: ${livro.titulo}, Autor: ${autor}, Publicado em: ${livro.ano}`)
         if (livrosEncontrados.length > 0) {
             return livrosEncontrados
         } else {
-            return `Autor: ${autor}\nNenhum livro encontrado`
+            return `Autor: ${autor}\nNenhum livro encontrado.`
         }
     } else {
-        return "Autor não informado"
+        return "Autor não informado."
     }
 }
 
@@ -46,7 +47,7 @@ export function _ordenarLivrosPorTitulo(livros) {
     return livros.sort((a, b) => a.titulo.localeCompare(b.titulo))
 }
 
-export function adicionaLivro(titulo, autor, ano, id) {
+export function cadastrarLivro(titulo, autor, ano, id) {
     const indice = livros.findIndex(livro => livro.id === id)
     if (indice >= 0) {
         livros[indice].titulo = titulo
@@ -60,8 +61,13 @@ export function adicionaLivro(titulo, autor, ano, id) {
 }
 
 
-export function removeLivro(id) {
+export function excluirLivro(id) {
     const novoLivro = livros.filter(livro => livro.id != id)
+    livros = novoLivro
+}
+
+export function excluirLivroAutor(idAutor) {
+    const novoLivro = livros.filter(livro => livro.autor != idAutor)
     livros = novoLivro
 }
 
@@ -69,3 +75,4 @@ export function salvaLivrosArquivo() {
     const dadosJSON = JSON.stringify(_ordenarLivrosPorTitulo(livros), null, 4)
     fs.writeFileSync("livraria.json", dadosJSON, "utf8")
 }
+

@@ -1,38 +1,74 @@
 [
     {
-        "id": "fb63540b-0979-4db5-872f-062d6e0a32dd",
-        "titulo": "Chapeuzinho Vermelho",
-        "autor": "Autor Teste",
-        "ano": 2025
+        "id": "8b5d2c9f-7e4a-4d6a-8c03-1f9e0b2a6d30",
+        "titulo": "Algoritmos para Pessoas Reais",
+        "autor": "c8d2f7a1-5e9b-4d6a-8c03-7b1e4f2a9d65",
+        "ano_publicacao": 2018
     },
     {
-        "id": "9a8c7d28-7908-4f4d-9a9b-4bdcbcd31832",
-        "titulo": "Marcelo, Marmelo, Martelo",
-        "autor": "Ruth Rocha",
-        "ano": 1976
+        "id": "2a7c5e9f-8d1b-4a63-bc90-4e6d2f8a1c88",
+        "titulo": "APIs Escaláveis com JavaScript",
+        "autor": "e3c8a9d1-5f42-4e7b-9a61-0b2f6c4d8e90",
+        "ano_publicacao": 2023
     },
     {
-        "id": "d20cc035-b982-4644-94fe-f87b62907e9e",
-        "titulo": "Menina Bonita do Laço de Fita",
-        "autor": "Ana Maria Machado",
-        "ano": 1986
+        "id": "e2f7a9c1-5d8b-4e6a-8c31-2f9d0b4a6e55",
+        "titulo": "Arquitetura Além do Código",
+        "autor": "6f9a2d14-8b7c-4c0e-ae3a-9d1f2b7c5e42",
+        "ano_publicacao": 2020
     },
     {
-        "id": "68cf813e-c69d-4bce-9787-4424acd17e88",
-        "titulo": "O Menino Maluquinho",
-        "autor": "Ziraldo",
-        "ano": 1980
+        "id": "7d2e8c5f-9b4a-4a51-bd30-6e1c9f8a2d10",
+        "titulo": "Boas Práticas em Software",
+        "autor": "4f2b6e9d-7c8a-4a51-bd30-1e5c9f6a2d87",
+        "ano_publicacao": 2023
     },
     {
-        "id": "277cb2f0-1765-44af-bdbd-6fdaa97b9677",
-        "titulo": "O Pequeno Príncipe",
-        "autor": "Antoine de Saint-Exupéry",
-        "ano": 1943
+        "id": "a1f9c3e7-4b6d-4c8a-9d21-0e5f8a2c6b11",
+        "titulo": "Caminhos do Código",
+        "autor": "b1a6f7d2-4c8e-4c5a-9e9d-1f3c2a8d6b01",
+        "ano_publicacao": 2021
     },
     {
-        "id": "caad7a35-fc5a-46fe-a8d5-456465e98c9e",
-        "titulo": "Reinações de Narizinho",
-        "autor": "Monteiro Lobato",
-        "ano": 1931
+        "id": "3a9d5f8c-1e2b-4c61-9a70-6d4f2e8b5c20",
+        "titulo": "Código Limpo no Dia a Dia",
+        "autor": "4f2b6e9d-7c8a-4a51-bd30-1e5c9f6a2d87",
+        "ano_publicacao": 2021
+    },
+    {
+        "id": "9b4c8d2f-1e7a-4f63-8a91-6d5c2e0a7b66",
+        "titulo": "Design de Software Moderno",
+        "autor": "6f9a2d14-8b7c-4c0e-ae3a-9d1f2b7c5e42",
+        "ano_publicacao": 2022
+    },
+    {
+        "id": "5c9a8e2f-1d7b-4a31-8f60-2e4b6d0a9c40",
+        "titulo": "Estruturas de Dados Descomplicadas",
+        "autor": "c8d2f7a1-5e9b-4d6a-8c03-7b1e4f2a9d65",
+        "ano_publicacao": 2020
+    },
+    {
+        "id": "6e9a2f8d-7b4c-4d3a-8c91-1f5e0b2d6a99",
+        "titulo": "Fundamentos do Desenvolvimento Web",
+        "autor": "9a7d1c6e-3b24-4f5e-8d91-2e0c7b4a6f38",
+        "ano_publicacao": 2019
+    },
+    {
+        "id": "0c4f8d6a-5e7b-4a21-9b30-2d1e6f9c8a00",
+        "titulo": "HTML, CSS e JavaScript Essenciais",
+        "autor": "9a7d1c6e-3b24-4f5e-8d91-2e0c7b4a6f38",
+        "ano_publicacao": 2018
+    },
+    {
+        "id": "c3d8a2f9-6e4b-4a71-9f30-1b5d8c2e7a44",
+        "titulo": "Lógica Aplicada ao Mundo Real",
+        "autor": "b1a6f7d2-4c8e-4c5a-9e9d-1f3c2a8d6b01",
+        "ano_publicacao": 2019
+    },
+    {
+        "id": "f8d1a6c9-7b5e-4f92-9a31-6e2d5c0b8a77",
+        "titulo": "Node.js na Prática",
+        "autor": "e3c8a9d1-5f42-4e7b-9a61-0b2f6c4d8e90",
+        "ano_publicacao": 2022
     }
 ]

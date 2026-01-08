@@ -1,0 +1,32 @@
+[
+   {
+      "id": "b1a6f7d2-4c8e-4c5a-9e9d-1f3c2a8d6b01",
+      "nome": "Bruno Teixeira",
+      "nacionalidade": "Brasileiro"
+   },
+   {
+      "id": "6f9a2d14-8b7c-4c0e-ae3a-9d1f2b7c5e42",
+      "nome": "Carla Andrade",
+      "nacionalidade": "Brasileira"
+   },
+   {
+      "id": "e3c8a9d1-5f42-4e7b-9a61-0b2f6c4d8e90",
+      "nome": "Felipe Rocha",
+      "nacionalidade": "Brasileiro"
+   },
+   {
+      "id": "9a7d1c6e-3b24-4f5e-8d91-2e0c7b4a6f38",
+      "nome": "Lia Monteiro",
+      "nacionalidade": "Brasileira"
+   },
+   {
+      "id": "4f2b6e9d-7c8a-4a51-bd30-1e5c9f6a2d87",
+      "nome": "Marina Lopes",
+      "nacionalidade": "Brasileira"
+   },
+   {
+      "id": "c8d2f7a1-5e9b-4d6a-8c03-7b1e4f2a9d65",
+      "nome": "Rafael Nunes",
+      "nacionalidade": "Brasileiro"
+   }
+]
