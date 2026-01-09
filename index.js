@@ -24,24 +24,24 @@ while (1) {
                     nome = await le("\nInforme o nome completo do autor: ")
                     nacionalidade = await le("\nInforme a nacionalidade: ")
                     cadastrarAutor(nome, nacionalidade)
-                    textoVerde("Dados cadastrados com sucesso!\n")
+                    textoVerde("Dados cadastrados com sucesso!")
                     break
                 case "editar":
                     id = await menuSelecaoUsuario(listaAutores())
                     nome = await le("\nInforme o nome completo do autor: ")
                     nacionalidade = await le("\nInforme a nacionalidade: ")
                     cadastrarAutor(nome, nacionalidade, id)
-                    textoVerde("Dados editados com sucesso!\n")
+                    textoVerde("Dados editados com sucesso!")
                     break
                 case "excluir":
                     id = await menuSelecaoUsuario(listaAutores())
                     excluirAutor(id)
                     excluirLivroAutor(id)
-                    textoVerde("Dados excluidos com sucesso!\n")
+                    textoVerde("Dados excluidos com sucesso!")
                     break
                 case "listar":
                     busca = listaAutores()
-                    textoAzul(busca + "\n")
+                    textoAzul(busca)
                     break
                 case "↩":
                     voltar()
@@ -57,7 +57,7 @@ while (1) {
                     autor = await menuSelecaoUsuario(listaAutores())
                     ano = await le("\nInforme o ano de publicação: ")
                     cadastrarLivro(titulo, autor, ano)
-                    textoVerde("Dados cadastrados com sucesso!\n")
+                    textoVerde("Dados cadastrados com sucesso!")
                     break
                 case "editar":
                     id = await menuSelecaoUsuario(listaLivros())
@@ -66,16 +66,16 @@ while (1) {
                     autor = await menuSelecaoUsuario(listaAutores())
                     ano = await le("\nInforme o ano de publicação atualizado: ")
                     cadastrarLivro(titulo, autor, ano, id)
-                    textoVerde("Dados editados com sucesso!\n")
+                    textoVerde("Dados editados com sucesso!")
                     break
                 case "excluir":
                     id = await menuSelecaoUsuario(listaLivros())
                     excluirLivro(id)
-                    textoVerde("Dados excluídos com sucesso!\n")
+                    textoVerde("Dados excluídos com sucesso!")
                     break
                 case "listar":
                     busca = listaLivros()
-                    textoAzul(busca + "\n")
+                    textoAzul(busca)
                     break
                 case "↩":
                     voltar()
@@ -90,21 +90,21 @@ while (1) {
                     autorEncontrado = await buscaAutor(autor)
                     if(typeof autorEncontrado==="object"){
                         busca = buscaLivrosPorAutor(autorEncontrado[0].id, autorEncontrado[0].nome)
-                        textoAzul(busca + "\n")
+                        textoAzul(busca)
                     }else{
-                        textoAzul(autorEncontrado + "\n")
+                        textoAzul(autorEncontrado)
                     }
                     
                     break
                 case "livros publicados a partir do ano":
                     ano = await le("\nA partir de qual ano de publicação? ")
                     lista = buscaLivrosAposAno(ano)
-                    textoAzul(lista + "\n")
+                    textoAzul(lista)
                     break
                 case "autores por nacionalidade":
                     nacionalidade = await le("\nA partir de qual nacionalidade de publicação? ")
                     lista = buscaAutoresPorNacionalidade(nacionalidade)
-                    textoAzul(lista + "\n")
+                    textoAzul(lista)
                     break
                 case "↩":
                     voltar()
@@ -114,34 +114,11 @@ while (1) {
         case "💾 salvar no arquivo":
             salvaLivrosArquivo()
             salvaAutoresArquivo()
-            textoVerde("Dados salvos com sucesso!\n")
+            textoVerde("Dados salvos com sucesso!")
             break
         case "❌ sair":
             finaliza()
-            textoVerde("Até mais")
         default:
             console.log(`${selecionado.trim().toLocaleLowerCase()} não é válido.`)
     }
 }
-
-
-
-
-// console.log(listaLivros())
-
-// adicionaLivro('O empresário', 'Mariana Oliveira', 2025)
-// adicionaLivro('A cruz e a Espada', 'Oliveira Alves', 2014)
-
-// console.log(listaLivros())
-
-// removeLivro('O empresário')
-
-// console.log(listaLivros())
-
-// console.log(buscaLivrosPorAutor("Cecília Meireles"))
-
-// console.log(buscaLivrosAposAno(1990))
-
-// console.log(ordenarLivrosPorTitulo())
-
-// salvaLivrosArquivo()

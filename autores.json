@@ -20,6 +20,11 @@
       "nacionalidade": "Brasileira"
    },
    {
+      "id": "3134662b-08ca-4a44-8501-609fbd9899e1",
+      "nome": "Machado de Assis",
+      "nacionalidade": "Brasileiro"
+   },
+   {
       "id": "4f2b6e9d-7c8a-4a51-bd30-1e5c9f6a2d87",
       "nome": "Marina Lopes",
       "nacionalidade": "Brasileira"
@@ -28,5 +33,10 @@
       "id": "c8d2f7a1-5e9b-4d6a-8c03-7b1e4f2a9d65",
       "nome": "Rafael Nunes",
       "nacionalidade": "Brasileiro"
+   },
+   {
+      "id": "6ba52e75-1177-42d3-adb0-11c5d6b1c5fb",
+      "nome": "Ziraldo Teste",
+      "nacionalidade": "Italiano"
    }
 ]

@@ -44,10 +44,10 @@ export function textoPadrao(texto){
     term(`${texto}`)
 }
 export function textoVerde(texto){
-    term.green(`\n\n${texto}\n\n`)
+    term.green(`\n\n${texto}\n`)
 }
 export function textoAzul(texto){
-    term.blue(`\n\n${texto}\n\n`)
+    term.blue(`\n\n${texto}\n`)
 }
 
 export function finaliza(){
